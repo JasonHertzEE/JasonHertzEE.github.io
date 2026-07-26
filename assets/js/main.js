@@ -102,7 +102,7 @@
 		// Toggle.
 			$(
 				'<div id="headerToggle">' +
-					'<a href="#header" class="toggle"></a>' +
+					'<a href="#header" class="toggle">X</a>' +
 				'</div>'
 			)
 				.appendTo($body);
