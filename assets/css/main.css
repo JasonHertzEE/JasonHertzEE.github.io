@@ -2631,26 +2631,4 @@ input, select, textarea {
 				}
 
 	}
-/* 1. Hide the original 3-line hamburger lines */
-#navToggle .toggle:before, 
-#navToggle .toggle:after {
-    display: none !important;
-}
 
-/* 2. Bring back the text visibility and style it */
-#navToggle .toggle {
-    text-indent: 0 !important;      /* Overrides the template's text-hiding rule */
-    text-align: center;
-    line-height: 44px;              /* Vertically centers the text in the bar */
-    font-weight: bold;
-    font-size: 0.85rem;             /* Adjust text size as needed */
-    letter-spacing: 1px;
-    color: #fff !important;         /* Makes the text color white */
-    text-decoration: none;
-}
-
-/* 3. Insert the word "MENU" dynamically */
-#navToggle .toggle:after {
-    content: "MENU" !important;
-    display: block !important;
-}
