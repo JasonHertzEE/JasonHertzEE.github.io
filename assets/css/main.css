@@ -2631,4 +2631,43 @@ input, select, textarea {
 				}
 
 	}
+/* 1. Hide the text button on desktop screens */
+#navToggle {
+    display: none;
+}
 
+/* 2. Show and style the text button only on mobile screens */
+@media screen and (max-width: 980px) {
+    #navToggle {
+        display: block !important;
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        z-index: 10005;
+        height: 40px;
+        min-width: 70px;
+        background: #222629; /* Dark background matching the menu */
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    /* Remove the built-in 3-line icon */
+    #navToggle .toggle:before,
+    #navToggle .toggle:after {
+        display: none !important;
+    }
+
+    /* Format the text link */
+    #navToggle .toggle {
+        text-indent: 0 !important;
+        display: block;
+        line-height: 40px;
+        padding: 0 15px;
+        color: #ffffff !important;
+        font-weight: bold;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        text-decoration: none;
+        border: 0;
+    }
+}
